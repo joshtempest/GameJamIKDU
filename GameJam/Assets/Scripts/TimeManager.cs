@@ -7,6 +7,7 @@ public class TimeManager : MonoBehaviour
     public float dayLength;
     public static float timer;
     public static int days;
+    public static bool isNight;
     [SerializeField] bool isCounting;
 
     // Start is called before the first frame update
@@ -26,13 +27,24 @@ public class TimeManager : MonoBehaviour
         if (isCounting == true) // If isCounting bool is true, the TimeManager function will run.
         {
             timer += Time.deltaTime;
-            Debug.Log("Timer = " + timer);
+            //Debug.Log("Timer = " + timer);
 
             if (timer >= dayLength)
             {
                 days += 1; // Adds a day to the days variable.
                 timer = 0; // Resets the timer for he next day.
                 Debug.Log("Days = " + days);
+
+                if (isNight == true)
+                {
+                    isNight = false;
+                    Debug.Log("Night = " + isNight);
+                }
+                if (isNight == false)
+                {
+                    isNight = true;
+                    Debug.Log("Night = " + isNight);
+                }
             }
         }
         else
