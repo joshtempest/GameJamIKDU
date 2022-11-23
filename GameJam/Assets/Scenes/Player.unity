@@ -411,7 +411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6642360033375477221, guid: 33b769d2d7d926041880e0eaf29b843c, type: 3}
       propertyPath: m_Name
-      value: Cheese
+      value: Soup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33b769d2d7d926041880e0eaf29b843c, type: 3}
