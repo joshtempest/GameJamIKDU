@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CostManager : MonoBehaviour
 {
+    public float elecPrice = 1f;
     // Start is called before the first frame update
     void Start()
     {
