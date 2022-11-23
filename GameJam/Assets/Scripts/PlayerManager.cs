@@ -25,11 +25,6 @@ public class PlayerManager : MonoBehaviour
     private void FixedUpdate() // FixedUpdate er mere effektiv end update når det kommer til even based ting som flytning
     {
         myBody.velocity = movement * speed; // Vi sætter vores velocity af vores rigidbody2D i den hastighed vi har sat
-
-        if (Input.GetKeyDown("space"))
-        {
-            print("space key was pressed");
-        }
     }
 
     // Start is called before the first frame update
@@ -41,6 +36,9 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown("space"))
+        {
+            print("space key was pressed");
+        }
     }
 }
