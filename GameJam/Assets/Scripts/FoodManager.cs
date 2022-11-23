@@ -8,13 +8,31 @@ public class FoodManager : MonoBehaviour
     public bool hasCarrot;
     public bool hasOnion;
 
+    public bool nearTomato, nearCarrot, nearOnion, nearPot = false;
+
+
     public bool hasSoup;
 
     private bool withinRange;
 
-    private void FixedUpdate()
+    private void Update()
     {
-        makeSoup();
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (nearOnion) hasOnion = true;
+
+            else if (nearTomato) hasTomato = true;
+
+            else if (nearCarrot) hasCarrot = true;
+
+            else if (nearPot && hasTomato && hasOnion && hasCarrot)
+            {
+                hasSoup = true;
+                Debug.Log("You made soup. Olga is proud");
+            }
+
+        }
+   
     }
 
     private void makeSoup()
@@ -31,36 +49,39 @@ public class FoodManager : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         withinRange = true;
-        if (other.gameObject.tag == "Tomatoes")
+        if (collision.gameObject.tag == "Tomatoes")
         {
-            hasTomato = true;
-            Debug.Log("You have a Tomato");
+            nearTomato = true;
         }
 
-        else if (other.gameObject.tag == "Carrots")
+        else if (collision.gameObject.tag == "Carrots")
         {
-            hasCarrot = true;
-            Debug.Log("You have a carrot");
+            nearCarrot = true;
         }
 
-        else if (other.gameObject.tag == "Onions")
+        else if (collision.gameObject.tag == "Onions")
         {
-            hasOnion = true;
-            Debug.Log("You have a Onion");
+            nearOnion = true;
+            //hasOnion = true;
         }
 
-        else if (other.gameObject.tag == "Pot")
+        else if (collision.gameObject.tag == "Pot")
         {
-            hasSoup = true;
-            Debug.Log("gut soup");
+            nearPot = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+
+        nearOnion = false;
+        nearCarrot = false;
+        nearTomato = false;
+        nearPot = false;
+
         if (hasSoup)
         {
             hasTomato = false;
