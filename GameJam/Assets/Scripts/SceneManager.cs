@@ -4,40 +4,54 @@ using UnityEngine;
 
 public class SceneManager : MonoBehaviour
 {
-    public float dayLength;
-    public static float timer;
-    public static int days;
-    [SerializeField] bool isCounting;
+    public GameObject pauseMenu;
+    public static bool isPaused; //Responsible for pausing/unpausing the game.
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        isPaused = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        TimeManager(); // Runs the TimeManager() method every frame.
+        if (Input.GetKeyDown("escape"))
+        {
+            print("Escape key was pressed");
+            PauseMenu();
+        }
     }
 
-    public void TimeManager()
+    public void PauseMenu()
     {
-        if (isCounting == true) // If isCounting bool is true, the TimeManager function will run.
+        if (isPaused)
         {
-            timer += Time.deltaTime;
-            Debug.Log("Timer = " + timer);
+            isPaused = false;
+            pauseMenu.SetActive(false);
+            ResumeGame();
+        }
+        else if (!isPaused)
+        {
+            isPaused = true;
+            pauseMenu.SetActive(true);
+            PauseGame();
+        }
+    }
 
-            if (timer >= dayLength)
-            {
-                days += 1; // Adds a day to the days variable.
-                timer = 0; // Resets the timer for he next day.
-                Debug.Log("Days = " + days);
-            }
-        }
-        else
-        {
-            timer = 0; // Resets the timer.
-        }
+    //Pauses the game when called
+    public void PauseGame()
+    {
+        Time.timeScale = 0f; //Stops the game
+        isPaused = true;
+        Debug.Log("Paused"); //Prints to console that the game is paused
+    }
+    
+    //Unpauses the game when called
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f; //Resumes the game
+        isPaused = false;
+        Debug.Log("Resumed"); //Prints to console that the game has resumed
     }
 }
