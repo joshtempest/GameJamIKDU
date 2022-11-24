@@ -242,6 +242,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1534517516}
     - target: {fileID: 963325004, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
+      propertyPath: tomatoSoup
+      value: 
+      objectReference: {fileID: 448345660851694637, guid: 21f8a907fdda75e4eb1ba5e1bd422093, type: 3}
+    - target: {fileID: 963325004, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
       propertyPath: carrotSpawn
       value: 
       objectReference: {fileID: 1892694063}
@@ -297,6 +301,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1894168979768070371, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
+      propertyPath: pickUp
+      value: 
+      objectReference: {fileID: 1846373321}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
 --- !u!1001 &192299963
@@ -1347,6 +1355,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1846373321 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 963325004, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
+  m_PrefabInstance: {fileID: 30589243}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e9c3bb552e65f49a0b1aa750ebbe48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1869876487
 PrefabInstance:
   m_ObjectHideFlags: 0
