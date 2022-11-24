@@ -187,7 +187,7 @@ MonoBehaviour:
   - 'so the man had to practice everyday, sending out orders in hopes of seeing his
     wifes face once again.... '
   - ...
-  timeBtwnChars: 0.04
+  timeBtwnChars: 0.06
   timeBtwnWords: 1
 --- !u!114 &41366593
 MonoBehaviour:
