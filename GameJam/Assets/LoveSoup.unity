@@ -240,15 +240,19 @@ PrefabInstance:
     - target: {fileID: 963325004, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
       propertyPath: saltSpawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1429445187}
+    - target: {fileID: 963325004, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
+      propertyPath: tomatoSoup
+      value: 
+      objectReference: {fileID: 1429445186}
     - target: {fileID: 963325004, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
       propertyPath: carrotSpawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1429445188}
     - target: {fileID: 963325004, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
       propertyPath: tomatoSpawn
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1429445189}
     - target: {fileID: 676119275828867005, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
       propertyPath: m_Name
       value: Fat_Chef
@@ -993,8 +997,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4858311412997013240, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
+      propertyPath: m_Name
+      value: Carrot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5094462046256525454, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
+      propertyPath: m_Name
+      value: Tomato
+      objectReference: {fileID: 0}
+    - target: {fileID: 7529974970039075407, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
+      propertyPath: m_Name
+      value: Salt
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
+--- !u!1 &1429445186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4368839737679329102, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
+  m_PrefabInstance: {fileID: 1429445185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1429445187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7529974970039075407, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
+  m_PrefabInstance: {fileID: 1429445185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1429445188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4858311412997013240, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
+  m_PrefabInstance: {fileID: 1429445185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1429445189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5094462046256525454, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
+  m_PrefabInstance: {fileID: 1429445185}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1463706009 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7431169543944703625, guid: 58a59559e5e44bb43863ae4253261a8b, type: 3}

@@ -3432,7 +3432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833016877204121443, guid: e22285fc1c8180243866d9eabbcf7a7f, type: 3}
       propertyPath: m_Name
-      value: tomato
+      value: Tomato
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22285fc1c8180243866d9eabbcf7a7f, type: 3}
@@ -3494,7 +3494,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8283742001658882819, guid: ccdff27b9eaff684c8d83ade088c2c60, type: 3}
       propertyPath: m_Name
-      value: salt
+      value: Salt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccdff27b9eaff684c8d83ade088c2c60, type: 3}
@@ -3556,7 +3556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8283852860010149788, guid: 1ccb82c9b9704724d968bb8e14cec2d9, type: 3}
       propertyPath: m_Name
-      value: carrot
+      value: Carrot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ccb82c9b9704724d968bb8e14cec2d9, type: 3}
