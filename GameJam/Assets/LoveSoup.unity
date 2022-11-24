@@ -1472,76 +1472,76 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8474133755524772265, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
   m_PrefabInstance: {fileID: 7772799}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1445498901371838235
+--- !u!1001 &242525622072873166
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1623114604}
     m_Modifications:
-    - target: {fileID: 2252936518572736372, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
-      propertyPath: MoneyController
-      value: 
-      objectReference: {fileID: 828203994}
-    - target: {fileID: 3225093065161186626, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 242525622136022303, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_Name
       value: UpgradeController
       objectReference: {fileID: 0}
-    - target: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+    - target: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1680667651949055955, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
+      propertyPath: MoneyController
+      value: 
+      objectReference: {fileID: 828203994}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
 --- !u!4 &1445498901371838236 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3790641978598740697, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
-  m_PrefabInstance: {fileID: 1445498901371838235}
+  m_CorrespondingSourceObject: {fileID: 1680667651949055954, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
+  m_PrefabInstance: {fileID: 242525622072873166}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1445498901371838237 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2252936518572736372, guid: ec3cd823612e0ea4dba7490d46487ed5, type: 3}
-  m_PrefabInstance: {fileID: 1445498901371838235}
+  m_CorrespondingSourceObject: {fileID: 1680667651949055955, guid: 7790fa57dc826d14aaef73684f20c4db, type: 3}
+  m_PrefabInstance: {fileID: 242525622072873166}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
