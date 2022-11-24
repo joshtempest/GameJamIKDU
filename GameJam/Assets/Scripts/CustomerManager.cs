@@ -36,13 +36,13 @@ public class CustomerManager : MonoBehaviour
             else
             {
                 //Debug.Log("Time has run out!");
-                print("Time has run out !");
+                print("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
 
             if (timeRemaining <= 0)
                 {
-                print("Time has run out !");
+                print("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
                 }
