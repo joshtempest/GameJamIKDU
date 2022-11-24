@@ -14,17 +14,18 @@ public class CustomerManager : MonoBehaviour
     public bool timerIsRunning = false;
     public TextMeshProUGUI timeText;
     public GameObject UpgradeController;
-    public UpdradeManager upgradeManager;
+    UpdradeManager upgradeManager;
     private int upgrade;
 
     // Start is called before the first frame update
+
     void Start()
     {
         // Starts the timer automatically
         timerIsRunning = true;
         upgradeManager = UpgradeController.GetComponent<UpdradeManager>();
-        upgrade = upgradeManager.pUpgrade;
-        timeRemaining += upgrade;
+        //upgrade = upgradeManager.pUpgrade;
+        //timeRemaining += upgrade;
     }    
  
 
@@ -38,7 +39,7 @@ public class CustomerManager : MonoBehaviour
                 timeRemaining -= Time.deltaTime;
                 SetTimeText(timeRemaining);
             }
-            
+
             else
             {
                 //Debug.Log("Time has run out!");

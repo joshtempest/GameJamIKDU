@@ -32,7 +32,7 @@ public class FoodManager : MonoBehaviour
             }
 
         }
-
+   
     }
     public void Actions()
     {
