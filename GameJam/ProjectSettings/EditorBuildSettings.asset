@@ -9,12 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/HappyFamily.unity
     guid: d6963c8dbf5e732459830d352a869ac3
   - enabled: 1
+    path: Assets/Scenes/SadFamily.unity
+    guid: ca46af7c1e145d147a0a889756249689
+  - enabled: 1
     path: Assets/StartScene.unity
     guid: c1a19240b6beae54e9a4decf854f74da
   - enabled: 1
     path: Assets/LoveSoup.unity
     guid: f4c490d3539396542840963406214a29
-  - enabled: 1
-    path: Assets/Scenes/SadFamily.unity
-    guid: ca46af7c1e145d147a0a889756249689
   m_configObjects: {}
