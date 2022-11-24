@@ -6,7 +6,7 @@ public class TimeManager : MonoBehaviour
 {
     public float dayLength;
     [HideInInspector] public float timer;
-    [HideInInspector] public int days = 1;
+    [HideInInspector] public int days;
     [HideInInspector] public bool isNight;
     public bool isCounting;
 
@@ -23,6 +23,8 @@ public class TimeManager : MonoBehaviour
         isNight = false;
 
         menuManager = SceneController.GetComponent<MenuManager>();
+
+        days = 1;
     }
 
     // Update is called once per frame

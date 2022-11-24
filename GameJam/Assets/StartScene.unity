@@ -423,7 +423,6 @@ GameObject:
   - component: {fileID: 726439434}
   - component: {fileID: 726439436}
   - component: {fileID: 726439435}
-  - component: {fileID: 726439438}
   - component: {fileID: 726439437}
   m_Layer: 5
   m_Name: Image
@@ -510,22 +509,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &726439438
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726439433}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 90fc3a72aa82e13418824a07b3462f9e, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 90fc3a72aa82e13418824a07b3462f9e, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &826719367
 GameObject:
   m_ObjectHideFlags: 0
