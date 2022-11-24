@@ -17,7 +17,7 @@ public class CostManager : MonoBehaviour
 
     //Gets all scripts needed
     public GameObject TimeController;
-    public TimeManager timeManager;
+    //public TimeManager timeManager;
 
     //Magic numbers, stand-ins from other scripts
     public float Time = 3;
@@ -37,8 +37,7 @@ public class CostManager : MonoBehaviour
     public void PriceCalculation()
     {
         //Gets variable days from timeManager script
-        timeManager = TimeController.GetComponent<TimeManager>();
-        day = TimeManager.days;
+        day = TimeController.GetComponent<TimeManager>().days;
 
         //Calculates the total electricity price for the day
         finalElec = elecPrice + ((float)day / 2);
