@@ -40,10 +40,10 @@ public class UpdradeManager : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        if(OrderPickup != null)
+        //if(OrderPickup != null)
         {
-            currentMoney +1;
-            MoneyCounter.instance.increaseMmoney(value);
+            //currentMoney +1;
+            //MoneyCounter.instance.increaseMmoney(value);
         }
 
     }

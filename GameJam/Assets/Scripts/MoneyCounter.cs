@@ -22,8 +22,8 @@ public class MoneyCounter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        costManager = GameObject.find("CostManager").GetComponent<CostManager>();
-        timeManager = GameObject.find("TimeManager").GetComponent<TimeManager>();
+        costManager = GameObject.Find("CostManager").GetComponent<CostManager>();
+        timeManager = GameObject.Find("TimeManager").GetComponent<TimeManager>();
         moneyText.text = "MONEY: " + currentMoney.ToString();
     }
 
@@ -31,7 +31,7 @@ public class MoneyCounter : MonoBehaviour
     void FixedUpdate()
     {
         // MIGHT NOT BE NAMED GET NIGHT!!!!
-        if(timeManager.GetNight()){
+        //if(timeManager.GetNight()){
 
             //subtract final price
             //Reset finalprce from time manager OR somehow make sure this only subtracts once per night.
@@ -40,7 +40,7 @@ public class MoneyCounter : MonoBehaviour
 
 
 
-        }
+        //}
 
     }
 
