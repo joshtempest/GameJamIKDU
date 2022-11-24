@@ -310,6 +310,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 739953475}
+    - target: {fileID: 381505644216934642, guid: 05204762576882a4995cd64ec7109bf2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 381505645270968632, guid: 05204762576882a4995cd64ec7109bf2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1719,5 +1723,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7431169543944703626, guid: 58a59559e5e44bb43863ae4253261a8b, type: 3}
+      propertyPath: orderController
+      value: 
+      objectReference: {fileID: 1207998340}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58a59559e5e44bb43863ae4253261a8b, type: 3}
