@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -54,6 +55,17 @@ private IEnumerator TextVisible()
     }
 }
 
+public void NextStory()
+
+    {
+    SceneManager.LoadScene("SadFamily");
+    }
+
+public void StartMenu()
+
+    {
+    SceneManager.LoadScene("StartScene");
+    }
 
 }
 
