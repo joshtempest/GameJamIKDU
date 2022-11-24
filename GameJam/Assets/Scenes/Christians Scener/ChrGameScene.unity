@@ -155,6 +155,7 @@ MonoBehaviour:
   timeRemaining: 10
   timerIsRunning: 0
   timeText: {fileID: 1537619431}
+  UpgradeController: {fileID: 466573048}
 --- !u!4 &77608383
 Transform:
   m_ObjectHideFlags: 0
@@ -169,6 +170,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &466573048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 466573050}
+  - component: {fileID: 466573049}
+  m_Layer: 0
+  m_Name: Upgrade Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &466573049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466573048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433fc936c4efc704fb2fd0428f56d121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pUpgrade: 10
+--- !u!4 &466573050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466573048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 544.0805, y: 299.9383, z: -3.3023224}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &584371808 stripped
 GameObject:
@@ -783,7 +829,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 880896796363938069, guid: f4a22f25dad95014d876ed366d259dd5, type: 3}
       propertyPath: m_Name
-      value: SceneController
+      value: Scene Controller
       objectReference: {fileID: 0}
     - target: {fileID: 880896796363938070, guid: f4a22f25dad95014d876ed366d259dd5, type: 3}
       propertyPath: pauseMenu
@@ -853,10 +899,6 @@ PrefabInstance:
     - target: {fileID: 8038869498492344468, guid: 5fa9e117586c62a48a88d436e1ea7659, type: 3}
       propertyPath: m_Name
       value: Time Controller
-      objectReference: {fileID: 0}
-    - target: {fileID: 8038869498492344469, guid: 5fa9e117586c62a48a88d436e1ea7659, type: 3}
-      propertyPath: isCounting
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8038869498492344470, guid: 5fa9e117586c62a48a88d436e1ea7659, type: 3}
       propertyPath: m_RootOrder

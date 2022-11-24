@@ -14,7 +14,7 @@ public class CustomerManager : MonoBehaviour
     public bool timerIsRunning = false;
     public TextMeshProUGUI timeText;
     public GameObject UpgradeController;
-    UpdradeManager upgradeManager;
+    UpgradeManager upgradeManager;
     private int upgrade;
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class CustomerManager : MonoBehaviour
     {
         // Starts the timer automatically
         timerIsRunning = true;
-        upgradeManager = UpgradeController.GetComponent<UpdradeManager>();
+        upgradeManager = UpgradeController.GetComponent<UpgradeManager>();
         //upgrade = upgradeManager.pUpgrade;
         //timeRemaining += upgrade;
     }    

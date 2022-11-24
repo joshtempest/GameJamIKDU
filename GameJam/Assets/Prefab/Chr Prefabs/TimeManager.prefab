@@ -44,5 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ef4135a4bcec94eb150ac1f38ae8d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayLength: 10
-  isCounting: 0
+  dayLength: 5
+  timer: 0
+  days: 1
+  isNight: 0
+  isCounting: 1
