@@ -33,7 +33,7 @@ public class UpdradeManager : MonoBehaviour
     {
         //OnClicked.GameObject.Find(CPButton);
 
-        pUpgrade +2;
+        //pUpgrade +2;
 
         Debug.Log("Hello!");
     }
