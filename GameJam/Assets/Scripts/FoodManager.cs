@@ -9,6 +9,9 @@ public class FoodManager : MonoBehaviour
     public bool hasCarrot;
     public bool hasOnion;
 
+    //Getting scripts
+    public PickUp pickUp;
+
     // To check if the player is near the different stations.
     public bool nearTomato, nearCarrot, nearOnion, nearPot = false;
 
@@ -41,14 +44,28 @@ public class FoodManager : MonoBehaviour
     // Is being called in the playerManagement script
     public void Actions()
     {
-        if (nearOnion) hasOnion = true;
-        else if (nearTomato) hasTomato = true;
-        else if (nearCarrot) hasCarrot = true;
+        if (nearOnion)
+        {
+            hasOnion = true;
+            pickUp.SpawnSalt();
+        }
+        else if (nearTomato) 
+        {
+            hasTomato = true;
+            pickUp.SpawnTomato();
+        }
+        else if (nearCarrot) 
+        {
+            hasCarrot = true;
+            pickUp.SpawnCarrot();
+        }
         else if (nearPot && hasTomato && hasOnion && hasCarrot)
         {
             hasSoup = true;
             Debug.Log("You made soup. Olga is proud");
+            pickUp.SpawnTomatoSoup();
         }
+
     }
 
     // Determines fi the player is near tagged objects
