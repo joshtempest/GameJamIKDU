@@ -173,7 +173,7 @@ MonoBehaviour:
   hasTomato: 0
   hasCarrot: 0
   hasOnion: 0
-  pickUp: {fileID: 0}
+  pickUp: {fileID: 963325004}
   nearTomato: 0
   nearCarrot: 0
   nearOnion: 0

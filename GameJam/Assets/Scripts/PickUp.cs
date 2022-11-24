@@ -10,6 +10,9 @@ public class PickUp : MonoBehaviour
     public GameObject tomatoSoup;
     public GameObject Fat_Chef;
     private Transform chefTransform;
+    private GameObject salty;
+    private GameObject toma;
+    private GameObject carro;
     private float cx;
     private float cy;
 
@@ -19,18 +22,12 @@ public class PickUp : MonoBehaviour
         Fat_Chef = GameObject.Find("Fat_Chef");
         chefTransform = Fat_Chef.GetComponent<Transform>();
         cx = chefTransform.position.x;
-        cy= chefTransform.position.y;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        cy= chefTransform.position.y - 10;
     }
 
     public void SpawnTomato()
     {
-        Instantiate(tomatoSpawn, new Vector2(cx,cy), Quaternion.identity);
+        Instantiate(tomatoSpawn, chefTransform, true);
     }
     public void SpawnCarrot()
     {
@@ -42,6 +39,15 @@ public class PickUp : MonoBehaviour
     }
     public void SpawnTomatoSoup()
     {
-        Instantiate(tomatoSoup, chefTransform, true);
+        Instantiate(tomatoSoup, new Vector3(cx, cy), Quaternion.identity);
+    }
+    public void destruction()
+    {
+        salty = GameObject.Find("Salt(Clone)");
+        toma = GameObject.Find("Tomato(Clone)");
+        carro = GameObject.Find("Carrot(Clone)");
+        Destroy(salty);
+        Destroy(toma);
+        Destroy(carro);
     }
 }

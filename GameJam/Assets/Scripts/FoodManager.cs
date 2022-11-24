@@ -62,6 +62,7 @@ public class FoodManager : MonoBehaviour
         else if (nearPot && hasTomato && hasOnion && hasCarrot)
         {
             hasSoup = true;
+            pickUp.destruction();
             Debug.Log("You made soup. Olga is proud");
             pickUp.SpawnTomatoSoup();
         }
