@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,14 @@ public class OrderManager : MonoBehaviour
 
     public void RemoveOrder(int orderNumber, float timeRemaining)
     {
-        earnings = orders.ElementAt(orderNumber).GetPrice() + um.tUpgrade;
+        try
+        {
+            earnings = orders.ElementAt(orderNumber).GetPrice() + um.tUpgrade;
+        }
+        catch (ArgumentOutOfRangeException)
+        {
+            Debug.Log("No Orders!");
+        }        
         dailyEarnings += earnings;
         orders.Remove(orders.ElementAt(orderNumber));
     }
