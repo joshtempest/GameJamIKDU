@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
   upgradeMenu: {fileID: 0}
+  dayText: {fileID: 0}
   enableDebugging: 0
   TimeController: {fileID: 0}
   DayProgressBar: {fileID: 0}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
@@ -10,8 +11,8 @@ public class MenuManager : MonoBehaviour
     public static bool isPaused; //Responsible for pausing/unpausing the game.
     public GameObject upgradeMenu;
     public static bool isUpgrading;
-    
-    
+    public TextMeshProUGUI dayText;
+
     // When true enables console debugging.
     [SerializeField] private bool enableDebugging;
 
@@ -32,7 +33,7 @@ public class MenuManager : MonoBehaviour
     {
         UpdateDayProgressBar();
 
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKeyDown("escape") && isUpgrading == false)
         {
             //print("Escape key was pressed");
             PauseMenu();
@@ -77,13 +78,13 @@ public class MenuManager : MonoBehaviour
         {
             isUpgrading = false;
             upgradeMenu.SetActive(false);
-            //ResumeGame();
+            ResumeGame();
         }
         else if (!isUpgrading)
         {
             isUpgrading = true;
             upgradeMenu.SetActive(true);
-            //PauseGame();
+            PauseGame();
         }
     }
 
@@ -101,6 +102,13 @@ public class MenuManager : MonoBehaviour
         Time.timeScale = 1f; //Resumes the game
         isPaused = false;
         Debugger("ResumeGame"); //Calls the Debug method to prints to console
+    }
+
+    public void SetDayText()
+    {
+        timeManager = TimeController.GetComponent<TimeManager>();
+
+        dayText.text = "Day " + timeManager.days;
     }
 
     void Debugger(string type)
