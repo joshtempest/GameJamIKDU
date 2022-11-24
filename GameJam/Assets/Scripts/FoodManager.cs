@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
 public class FoodManager : MonoBehaviour
@@ -44,17 +45,18 @@ public class FoodManager : MonoBehaviour
     // Is being called in the playerManagement script
     public void Actions()
     {
-        if (nearOnion)
+        if (nearOnion && !hasOnion)
         {
             hasOnion = true;
             pickUp.SpawnSalt();
         }
-        else if (nearTomato) 
+            
+        else if (nearTomato && !hasTomato) 
         {
             hasTomato = true;
             pickUp.SpawnTomato();
         }
-        else if (nearCarrot) 
+        else if (nearCarrot && !hasCarrot) 
         {
             hasCarrot = true;
             pickUp.SpawnCarrot();

@@ -130,9 +130,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540795715}
     m_Modifications:
+    - target: {fileID: 8361540340840362485, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8474133755524772265, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
       propertyPath: m_Name
       value: DayProgressBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539426393459462989, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 83.1318
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539426393459462989, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 6.6501
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539426393459462989, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -43.88931
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539426393459462989, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8539619455631596399, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
       propertyPath: m_Pivot.x
@@ -200,11 +220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8539619455631596399, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -311.88
       objectReference: {fileID: 0}
     - target: {fileID: 8539619455631596399, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -24
+      value: -72
       objectReference: {fileID: 0}
     - target: {fileID: 8539619455631596399, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -217,6 +237,18 @@ PrefabInstance:
     - target: {fileID: 8539619455631596399, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540996226210760791, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 89.8657
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540996226210760791, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -44.466175
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540996226210760791, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88dd094df6395964a9c976dd426888b5, type: 3}
@@ -916,8 +948,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -330, y: 64}
-  m_SizeDelta: {x: 371.3217, y: 50}
+  m_AnchoredPosition: {x: -311.88, y: 75.0038}
+  m_SizeDelta: {x: 487.13, y: 44.3848}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &559545070
 GameObject:
@@ -1181,12 +1213,16 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4636421418118419083, guid: 1fdb352389abb5446816278a0c964569, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.3059
+      objectReference: {fileID: 0}
+    - target: {fileID: 4636421418118419083, guid: 1fdb352389abb5446816278a0c964569, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.47
+      value: -7.37
       objectReference: {fileID: 0}
     - target: {fileID: 4636421418118419083, guid: 1fdb352389abb5446816278a0c964569, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.39
+      value: -0.987
       objectReference: {fileID: 0}
     - target: {fileID: 4636421418118419083, guid: 1fdb352389abb5446816278a0c964569, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1677,7 +1713,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Day
+  m_text: Day 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 61aa0b9f81ed25e4f8e02830f5161588, type: 2}
   m_sharedMaterial: {fileID: -1055895120455146785, guid: 61aa0b9f81ed25e4f8e02830f5161588, type: 2}
