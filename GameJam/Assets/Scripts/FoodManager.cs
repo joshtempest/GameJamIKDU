@@ -63,6 +63,7 @@ public class FoodManager : MonoBehaviour
         {
             hasSoup = true;
             Debug.Log("You made soup. Olga is proud");
+            pickUp.destruction();
             pickUp.SpawnTomatoSoup();
         }
 
