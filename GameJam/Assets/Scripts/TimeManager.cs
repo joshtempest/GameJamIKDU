@@ -7,7 +7,7 @@ public class TimeManager : MonoBehaviour
     public float dayLength;
     [HideInInspector] public float timer;
     [HideInInspector] public int days = 1;
-    [HideInInspector] public bool isNight;
+    //[HideInInspector] public bool isNight;
     public bool isCounting;
 
     // Start is called before the first frame update
@@ -34,16 +34,8 @@ public class TimeManager : MonoBehaviour
                 timer = 0; // Resets the timer for he next day.
                 Debug.Log("Days = " + days);
 
-                if (isNight == true)
-                {
-                    isNight = false;
-                    Debug.Log("Night = " + isNight);
-                }
-                if (isNight == false)
-                {
-                    isNight = true;
-                    Debug.Log("Night = " + isNight);
-                }
+                
+                isCounting = false;
             }
         }
         else
