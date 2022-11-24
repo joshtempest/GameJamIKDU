@@ -5,15 +5,14 @@ using UnityEngine;
 public class TimeManager : MonoBehaviour
 {
     public float dayLength;
-    public static float timer;
-    public static int days;
-    public static bool isNight;
+    [HideInInspector] public float timer;
+    [HideInInspector] public int days = 1;
+    [HideInInspector] public bool isNight;
     [SerializeField] bool isCounting;
 
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
