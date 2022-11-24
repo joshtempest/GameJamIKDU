@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3916490289007815313}
   - component: {fileID: 2494272502859042832}
   - component: {fileID: 3320386027320168782}
-  - component: {fileID: 2467765833582425908}
   m_Layer: 5
   m_Name: New Day Button
   m_TagString: Untagged
@@ -152,22 +151,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &2467765833582425908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4104547175329560293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433fc936c4efc704fb2fd0428f56d121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pUpgrade: 0
-  tUpgrade: 0
-  MoneyController: {fileID: 0}
-  LightController: {fileID: 0}
 --- !u!1 &4211080048172863216
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,8 +187,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 290, y: 143}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 292.78, y: 141}
+  m_SizeDelta: {x: 207.05, y: 46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3867128391789520643
 CanvasRenderer:
@@ -491,9 +474,9 @@ RectTransform:
   m_Father: {fileID: 5960151228224519912}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103.521454, y: -189.69165}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5960151227488188870
@@ -639,9 +622,9 @@ RectTransform:
   m_Father: {fileID: 5960151227926622937}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 145.72105, y: -37.514717}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 484.4642, y: 41.1105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5960151227570600258
@@ -778,9 +761,9 @@ RectTransform:
   m_Father: {fileID: 5960151228224519912}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103.521454, y: -37.93833}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5960151227612178301
@@ -907,7 +890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pUpgrade: 0
   tUpgrade: 0
-  MoneyController: {fileID: 0}
+  MoneyController: {fileID: 4211080048172863216}
   LightController: {fileID: 0}
 --- !u!1 &5960151227875575911
 GameObject:
@@ -1143,9 +1126,9 @@ RectTransform:
   m_Father: {fileID: 5960151227926622937}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 145.72105, y: -116.9889}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5960151227955217565
@@ -1346,9 +1329,9 @@ RectTransform:
   m_Father: {fileID: 5960151227926622937}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 145.72105, y: -193.28824}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 34.7608}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5960151228702589247
@@ -1735,7 +1718,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5960151228935066130
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1837,9 +1820,9 @@ RectTransform:
   m_Father: {fileID: 5960151228224519912}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103.521454, y: -113.814995}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5960151229190442629
@@ -1966,7 +1949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pUpgrade: 0
   tUpgrade: 0
-  MoneyController: {fileID: 0}
+  MoneyController: {fileID: 4211080048172863216}
   LightController: {fileID: 0}
 --- !u!1 &7391599555908046239
 GameObject:

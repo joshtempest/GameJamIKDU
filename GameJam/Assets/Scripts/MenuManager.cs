@@ -26,6 +26,7 @@ public class MenuManager : MonoBehaviour
     void Start()
     {
         isPaused = false;
+        SetDayText();
     }
 
     // Update is called once per frame
