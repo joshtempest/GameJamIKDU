@@ -10,20 +10,22 @@ public class UpgradeManager : MonoBehaviour
 {
 
     public int pUpgrade;
+    public int tUpgrade;
+
+    //public GameObject TakeMoney;
 
 //This function is inwoked by pressing the button
     public void CustomerPatience()
 
     {
-
-        //pUpgrade +2;
+        pUpgrade += 2;
 
     }
 
     public void Tips()
 
     {
-        
+        tUpgrade += 2;
     }
 
 

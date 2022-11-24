@@ -12,34 +12,42 @@ public class MoneyCounter : MonoBehaviour
     public GameObject TimeController;
     private TimeManager timeManager;
 
-    private float currentMoney = 3f;
+    public float currentMoney = 3f;
     private bool nightTime;
     private float lastPrice;
+
+    public TextMeshProUGUI MoneyText;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        SetCurrentMoneyText();
     }
 
     void FixedUpdate()
     {
         timeManager = TimeController.GetComponent<TimeManager>();
         
-        lastPrice = CostController.GetComponent<CostManager>().finalPrice;
+        //lastPrice = CostController.GetComponent<CostManager>().finalPrice;
         nightTime = timeManager.isNight;
     
         if(nightTime == true)
         {
-            currentMoney -= lastPrice;
-            lastPrice = 0;
+            //currentMoney -= lastPrice;
+            //lastPrice = 0;
         }
         else
         {
             
         }
+        SetCurrentMoneyText();
 
+    }
+
+    public void SetCurrentMoneyText()
+    {
+        MoneyText.text = "Money: " + currentMoney;
     }
 
 }
