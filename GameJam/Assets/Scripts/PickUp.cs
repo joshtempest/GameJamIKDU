@@ -7,6 +7,7 @@ public class PickUp : MonoBehaviour
     public GameObject tomatoSpawn;
     public GameObject carrotSpawn;
     public GameObject saltSpawn;
+    public GameObject tomatoSoup;
     public GameObject Fat_Chef;
     private Transform chefTransform;
 
@@ -32,9 +33,12 @@ public class PickUp : MonoBehaviour
     {
         Instantiate(carrotSpawn, chefTransform, true);
     }
-    public void SaltSpawn()
+    public void SpawnSalt()
     {
         Instantiate(saltSpawn, chefTransform, true);
     }
-
+    public void SpawnTomatoSoup()
+    {
+        Instantiate(tomatoSoup, chefTransform, true);
+    }
 }

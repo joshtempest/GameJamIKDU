@@ -55,7 +55,6 @@ public class PlayerManager : MonoBehaviour
         {
             foodManager.Actions();
             print("space key was pressed");
-            pickUp.SpawnTomato();
         }
     }
 
