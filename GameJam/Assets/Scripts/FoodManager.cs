@@ -54,7 +54,6 @@ public class FoodManager : MonoBehaviour
     // Determines fi the player is near tagged objects
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        withinRange = true;
         if (collision.gameObject.tag == "Tomatoes")
         {
             nearTomato = true;
