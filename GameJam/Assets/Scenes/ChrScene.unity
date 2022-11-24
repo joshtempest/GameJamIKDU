@@ -570,6 +570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8038869498492344469, guid: 5fa9e117586c62a48a88d436e1ea7659, type: 3}
+      propertyPath: isCounting
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8038869498492344470, guid: 5fa9e117586c62a48a88d436e1ea7659, type: 3}
       propertyPath: m_RootOrder
       value: 3
