@@ -10,13 +10,16 @@ public class PickUp : MonoBehaviour
     public GameObject tomatoSoup;
     public GameObject Fat_Chef;
     private Transform chefTransform;
-
+    private float cx;
+    private float cy;
 
     // Start is called before the first frame update
     void Start()
     {
         Fat_Chef = GameObject.Find("Fat_Chef");
-        chefTransform = Fat_Chef.transform;
+        chefTransform = Fat_Chef.GetComponent<Transform>();
+        cx = chefTransform.position.x;
+        cy= chefTransform.position.y;
     }
 
     // Update is called once per frame
@@ -27,7 +30,7 @@ public class PickUp : MonoBehaviour
 
     public void SpawnTomato()
     {
-        Instantiate(tomatoSpawn, chefTransform, true);
+        Instantiate(tomatoSpawn, new Vector2(cx,cy), Quaternion.identity);
     }
     public void SpawnCarrot()
     {
