@@ -11,6 +11,7 @@ public class SceneManager : MonoBehaviour
 
     // Gets all scripts needed
     public GameObject TimeController;
+    private TimeManager timeManager;
     public GameObject DayProgressBar;
 
     // Start is called before the first frame update
@@ -33,10 +34,12 @@ public class SceneManager : MonoBehaviour
     
     public void UpdateDayProgressBar()
     {
-        float length = TimeController.GetComponent<TimeManager>().dayLength; // Takes daylength variable from TimeManager script and attaches it to a local variable.
-        float time = TimeController.GetComponent<TimeManager>().timer; // Takes timer variable from TimeManager script and attaches it to a local variable.
+        timeManager = TimeController.GetComponent<TimeManager>();
 
-        DayProgressBar.GetComponent<ProgressBar>().maxBarValue = TimeController.GetComponent<TimeManager>().dayLength; // Sets the max value of the day progress bar to match the dayLength variable.
+        float length = TimeManager.dayLength;    //TimeController.GetComponent<TimeManager>().dayLength; // Takes daylength variable from TimeManager script and attaches it to a local variable.
+        float time = TimeManager.timer;     //TimeController.GetComponent<TimeManager>().timer; // Takes timer variable from TimeManager script and attaches it to a local variable.
+
+        DayProgressBar.GetComponent<ProgressBar>().maxBarValue = length; // Sets the max value of the day progress bar to match the dayLength variable.
 
         DayProgressBar.GetComponent<ProgressBar>().BarValue = length - time; // Subtracts the length and time variables and attaches it to the BarValue from the ProgressBar script.
     }

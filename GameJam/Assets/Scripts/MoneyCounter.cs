@@ -10,6 +10,7 @@ public class MoneyCounter : MonoBehaviour
 
     public GameObject CostController;
     public GameObject TimeController;
+    private TimeManager timeManager;
 
     private float currentMoney = 3f;
     private bool nightTime;
@@ -24,8 +25,10 @@ public class MoneyCounter : MonoBehaviour
 
     void FixedUpdate()
     {
+        timeManager = TimeController.GetComponent<TimeManager>();
+        
         lastPrice = CostController.GetComponent<CostManager>().finalPrice;
-        nightTime = TimeController.GetComponent<TimeManager>().isNight;
+        nightTime = TimeManager.isNight;
     
         if(nightTime == true)
         {
