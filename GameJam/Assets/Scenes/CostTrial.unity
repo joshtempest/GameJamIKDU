@@ -217,10 +217,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1172268780}
   - component: {fileID: 1172268781}
-  - component: {fileID: 1172268783}
-  - component: {fileID: 1172268782}
   m_Layer: 0
-  m_Name: ScriptManager
+  m_Name: CostController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -255,35 +253,87 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalPrice: 0
   allIngrePrice: 0
-  TimeController: {fileID: 0}
-  timeManager: {fileID: 1172268782}
   day: 3
+  finalElec: 0
+  TimeController: {fileID: 0}
   Time: 3
   tomatoUsed: 2
   carrotUsed: 1
   onionUsed: 1
   saltUsed: 0
---- !u!114 &1172268782
+--- !u!1 &1188153557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188153559}
+  - component: {fileID: 1188153558}
+  m_Layer: 0
+  m_Name: TimeController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1188153558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172268779}
+  m_GameObject: {fileID: 1188153557}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8ef4135a4bcec94eb150ac1f38ae8d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dayLength: 0
+  timer: 0
+  days: 1
+  isNight: 0
   isCounting: 0
---- !u!114 &1172268783
+--- !u!4 &1188153559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188153557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1789148, y: -0.06702417, z: 0.11398273}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1393750067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1393750069}
+  - component: {fileID: 1393750068}
+  m_Layer: 0
+  m_Name: FoodController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1393750068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172268779}
+  m_GameObject: {fileID: 1393750067}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69e0b91d62238e746a4f6c4af6a3f09a, type: 3}
@@ -297,6 +347,21 @@ MonoBehaviour:
   nearOnion: 0
   nearPot: 0
   hasSoup: 0
+--- !u!4 &1393750069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393750067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1789148, y: -0.06702417, z: 0.11398273}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1896080215
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +394,7 @@ MonoBehaviour:
   timeRemaining: 10
   timerIsRunning: 0
   timeText: {fileID: 0}
+  UpgradeController: {fileID: 0}
 --- !u!4 &1896080217
 Transform:
   m_ObjectHideFlags: 0
@@ -373,10 +439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433fc936c4efc704fb2fd0428f56d121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentMoney: 0
-  labelText: Money
-  moneyText: {fileID: 0}
-  value: 0
+  pUpgrade: 0
+  CPButton: {fileID: 0}
 --- !u!4 &1934622140
 Transform:
   m_ObjectHideFlags: 0

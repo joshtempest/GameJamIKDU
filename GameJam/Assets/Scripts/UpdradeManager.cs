@@ -16,7 +16,7 @@ public class UpdradeManager : MonoBehaviour
 
     {
 
-        pUpgrade +2;
+        //pUpgrade +2;
 
     }
 

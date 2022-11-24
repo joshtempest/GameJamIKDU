@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-    public float dayLength;
-    [HideInInspector] public float timer;
-    [HideInInspector] public int days = 1;
-    [HideInInspector] public bool isNight;
+    [SerializeField] public static float dayLength;
+    public static float timer;
+    public static int days = 1;
+    public static bool isNight;
     [SerializeField] bool isCounting;
 
     // Start is called before the first frame update
