@@ -28,7 +28,7 @@ public class MoneyCounter : MonoBehaviour
         timeManager = TimeController.GetComponent<TimeManager>();
         
         lastPrice = CostController.GetComponent<CostManager>().finalPrice;
-        nightTime = TimeManager.isNight;
+        nightTime = timeManager.isNight;
     
         if(nightTime == true)
         {

@@ -38,7 +38,7 @@ public class CostManager : MonoBehaviour
     {
         //Gets variable days from timeManager script
         timeManager = TimeController.GetComponent<TimeManager>();
-        day = TimeManager.days;
+        day = timeManager.days;
 
         //Calculates the total electricity price for the day
         finalElec = elecPrice + ((float)day / 2);

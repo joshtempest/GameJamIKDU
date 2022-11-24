@@ -36,8 +36,8 @@ public class SceneManager : MonoBehaviour
     {
         timeManager = TimeController.GetComponent<TimeManager>();
 
-        float length = TimeManager.dayLength;    //TimeController.GetComponent<TimeManager>().dayLength; // Takes daylength variable from TimeManager script and attaches it to a local variable.
-        float time = TimeManager.timer;     //TimeController.GetComponent<TimeManager>().timer; // Takes timer variable from TimeManager script and attaches it to a local variable.
+        float length = timeManager.dayLength;    //TimeController.GetComponent<TimeManager>().dayLength; // Takes daylength variable from TimeManager script and attaches it to a local variable.
+        float time = timeManager.timer;     //TimeController.GetComponent<TimeManager>().timer; // Takes timer variable from TimeManager script and attaches it to a local variable.
 
         DayProgressBar.GetComponent<ProgressBar>().maxBarValue = length; // Sets the max value of the day progress bar to match the dayLength variable.
 
