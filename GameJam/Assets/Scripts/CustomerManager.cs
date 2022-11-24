@@ -6,6 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using static System.Net.Mime.MediaTypeNames;
 using TMPro;
+using System.Runtime.InteropServices;
 
 public class CustomerManager : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class CustomerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timerIsRunning)
+        if (timerIsRunning == true) 
         {
             if (timeRemaining > 0)
             {
@@ -38,6 +39,13 @@ public class CustomerManager : MonoBehaviour
                 print("Time has run out !");
                 timeRemaining = 0;
                 timerIsRunning = false;
+
+            if (timeRemaining <= 0)
+                {
+                print("Time has run out !");
+                timeRemaining = 0;
+                timerIsRunning = false;
+                }
             }
         }
     }
