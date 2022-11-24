@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneManager : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
     
     // Interface elements
@@ -77,14 +77,15 @@ public class SceneManager : MonoBehaviour
         {
             isUpgrading = false;
             upgradeMenu.SetActive(false);
+            //ResumeGame();
         }
         else if (!isUpgrading)
         {
             isUpgrading = true;
             upgradeMenu.SetActive(true);
+            //PauseGame();
         }
     }
-
 
     //Pauses the game when called
     public void PauseGame()

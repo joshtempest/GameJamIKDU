@@ -151,7 +151,7 @@ MonoBehaviour:
   CostController: {fileID: 0}
   TimeController: {fileID: 0}
   currentMoney: 100
-  MoneyText: {fileID: 0}
+  MoneyText: {fileID: 4364788823656707887}
 --- !u!1 &5960151227239093084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,13 +1755,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5960151229190442625}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 5960151229190442631}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: Tips
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
