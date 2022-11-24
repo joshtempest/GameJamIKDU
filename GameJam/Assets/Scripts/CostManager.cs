@@ -35,7 +35,7 @@ public class CostManager : MonoBehaviour
     public void PriceCalculation()
     {
         timeManager = TimeController.GetComponent<TimeManager>();
-        //day = TimeManager.days;
+        day = TimeManager.days;
         //Calculates the total electricity price for the day
         elecPrice = elecPrice + ((float)day / 2);
         Debug.LogFormat("Elecprice is: {0}", elecPrice);
