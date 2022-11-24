@@ -81,6 +81,7 @@ public class MenuManager : MonoBehaviour
             upgradeMenu.SetActive(false);
             timeManager.isCounting = true;
             ResumeGame();
+            SetDayText();
         }
         else if (!isUpgrading)
         {
