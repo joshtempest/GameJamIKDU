@@ -319,10 +319,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 739953475}
-    - target: {fileID: 381505644216934642, guid: 05204762576882a4995cd64ec7109bf2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PauseMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 381505645270968632, guid: 05204762576882a4995cd64ec7109bf2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -429,22 +425,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 739953475}
-    - target: {fileID: 4148908014804943963, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
-      propertyPath: orderManager
-      value: 
-      objectReference: {fileID: 1207998340}
-    - target: {fileID: 4148908014804943963, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
-      propertyPath: CostController
-      value: 
-      objectReference: {fileID: 23889400}
-    - target: {fileID: 4148908014804943963, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
-      propertyPath: TimeController
-      value: 
-      objectReference: {fileID: 763817908}
-    - target: {fileID: 4211080048172863216, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
-      propertyPath: m_Name
-      value: Money Text
-      objectReference: {fileID: 0}
     - target: {fileID: 5960151228935066130, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -533,8 +513,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpgradeMenu
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4148908014804943963, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
 --- !u!224 &231958002 stripped
 RectTransform:
@@ -996,18 +975,6 @@ PrefabInstance:
     - target: {fileID: 4368839737475533530, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4858311412997013240, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
-      propertyPath: m_Name
-      value: Carrot
-      objectReference: {fileID: 0}
-    - target: {fileID: 5094462046256525454, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
-      propertyPath: m_Name
-      value: Tomato
-      objectReference: {fileID: 0}
-    - target: {fileID: 7529974970039075407, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
-      propertyPath: m_Name
-      value: Salt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
