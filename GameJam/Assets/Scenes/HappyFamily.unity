@@ -185,7 +185,7 @@ MonoBehaviour:
     model.  '
   - 'The man was heartbroken, his daughter had passed tragically and the wife left
     him. '
-  timeBtwnChars: 0.04
+  timeBtwnChars: 0.06
   timeBtwnWords: 1
 --- !u!114 &41366593
 MonoBehaviour:
