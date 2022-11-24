@@ -24,8 +24,8 @@ public class CustomerManager : MonoBehaviour
         // Starts the timer automatically
         timerIsRunning = true;
         upgradeManager = UpgradeController.GetComponent<UpgradeManager>();
-        //upgrade = upgradeManager.pUpgrade;
-        //timeRemaining += upgrade;
+        upgrade = upgradeManager.pUpgrade;
+        timeRemaining += upgrade;
         upgradeManager = UpgradeController.GetComponent<UpgradeManager>();
         upgrade = upgradeManager.pUpgrade;
         timeRemaining += upgrade;

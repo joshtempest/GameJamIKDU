@@ -30,8 +30,7 @@ public class CostManager : MonoBehaviour
    
     void Start()
     {
-        //Calls method to for trial
-        PriceCalculation();
+
     }
 
     public void PriceCalculation()
