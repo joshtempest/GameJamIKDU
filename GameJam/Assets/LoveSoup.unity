@@ -417,6 +417,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 739953475}
     - target: {fileID: 4148908014804943963, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: orderManager
+      value: 
+      objectReference: {fileID: 1207998340}
+    - target: {fileID: 4148908014804943963, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
       propertyPath: CostController
       value: 
       objectReference: {fileID: 23889400}
@@ -966,6 +970,11 @@ MonoBehaviour:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8038869498492344468, guid: 5fa9e117586c62a48a88d436e1ea7659, type: 3}
   m_PrefabInstance: {fileID: 1523859187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1207998340 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2707304367331143724, guid: 32338279b07263c4b961ea579630d110, type: 3}
+  m_PrefabInstance: {fileID: 5808300392678711526}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1429445185
 PrefabInstance:
