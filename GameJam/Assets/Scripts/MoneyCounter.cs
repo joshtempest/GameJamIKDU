@@ -11,6 +11,8 @@ public class MoneyCounter : MonoBehaviour
     public GameObject CostController;
     public GameObject TimeController;
     private TimeManager timeManager;
+    public GameObject orderManager;
+    OrderManager om;
 
     public float currentMoney = 100f;
     private bool nightTime;
@@ -22,6 +24,7 @@ public class MoneyCounter : MonoBehaviour
     void Start()
     {
         SetCurrentMoneyText();
+        om = orderManager.GetComponent<OrderManager>();
     }
 
     void FixedUpdate()
@@ -32,6 +35,8 @@ public class MoneyCounter : MonoBehaviour
     
         if(nightTime == true)
         {
+            currentMoney += om.dailyEarnings;
+            om.dailyEarnings = 0;
             currentMoney -= lastPrice;
             lastPrice = 0;
         }
