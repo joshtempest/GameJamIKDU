@@ -173,6 +173,7 @@ MonoBehaviour:
   hasTomato: 0
   hasCarrot: 0
   hasOnion: 0
+  pickUp: {fileID: 0}
   nearTomato: 0
   nearCarrot: 0
   nearOnion: 0
@@ -239,4 +240,5 @@ MonoBehaviour:
   tomatoSpawn: {fileID: 0}
   carrotSpawn: {fileID: 0}
   saltSpawn: {fileID: 0}
+  tomatoSoup: {fileID: 0}
   Fat_Chef: {fileID: 676119275828867005}

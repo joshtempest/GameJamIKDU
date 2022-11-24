@@ -8,7 +8,7 @@ public class TimeManager : MonoBehaviour
     [HideInInspector] public float timer;
     [HideInInspector] public int days;
     [HideInInspector] public bool isNight;
-    public bool isCounting;
+    [HideInInspector] public bool isCounting;
 
     // Gets all scripts needed.
     public GameObject SceneController;
@@ -25,7 +25,7 @@ public class TimeManager : MonoBehaviour
         menuManager = SceneController.GetComponent<MenuManager>();
 
         days = 1;
-    }
+}
 
     // Update is called once per frame
     void FixedUpdate()
@@ -55,7 +55,6 @@ public class TimeManager : MonoBehaviour
                 menuManager.UpgradeMenu();
 
                 isNight = true;
-                isCounting = false;
             }
         }
         else
