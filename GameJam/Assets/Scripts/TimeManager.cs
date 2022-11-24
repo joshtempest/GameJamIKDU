@@ -7,12 +7,16 @@ public class TimeManager : MonoBehaviour
     public float dayLength;
     [HideInInspector] public float timer;
     [HideInInspector] public int days = 1;
-    //[HideInInspector] public bool isNight;
+    [HideInInspector] public bool isNight;
     public bool isCounting;
+
+    // When true enables console debugging.
+    [SerializeField] private bool enableDebugging;
 
     // Start is called before the first frame update
     void Start()
     {
+        isNight = false;
     }
 
     // Update is called once per frame
@@ -25,6 +29,10 @@ public class TimeManager : MonoBehaviour
     {
         if (isCounting == true) // If isCounting bool is true, the TimeManager function will run.
         {
+            // Disables the night.
+            isNight = false;
+            Debugger("isNotNight")
+
             timer += Time.deltaTime;
             //Debug.Log("Timer = " + timer);
 
@@ -32,15 +40,35 @@ public class TimeManager : MonoBehaviour
             {
                 days += 1; // Adds a day to the days variable.
                 timer = 0; // Resets the timer for he next day.
-                Debug.Log("Days = " + days);
-
                 
+                Debugger("Days");
+                Debugger("isNight");
+
+                isNight = true;
                 isCounting = false;
             }
         }
         else
         {
             timer = 0; // Resets the timer.
+        }
+    }
+    void Debugger(string type)
+    {
+        if (enableDebugging == true)
+        {
+            if (type == "Days")
+            {
+                Debug.Log("Days = " + days);
+            }
+            if (type == "isNight")
+            {
+                Debug.Log("It is now night.");
+            }
+            if (type == "isNotNight")
+            {
+                Debug.Log("It is now night.");
+            }
         }
     }
 }

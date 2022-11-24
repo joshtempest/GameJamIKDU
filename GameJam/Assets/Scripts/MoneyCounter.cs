@@ -30,7 +30,7 @@ public class MoneyCounter : MonoBehaviour
         timeManager = TimeController.GetComponent<TimeManager>();
         
         //lastPrice = CostController.GetComponent<CostManager>().finalPrice;
-        nightTime = timeManager.isNight;
+        //nightTime = timeManager.isNight;
     
         if(nightTime == true)
         {

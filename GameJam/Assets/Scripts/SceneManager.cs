@@ -8,9 +8,11 @@ public class SceneManager : MonoBehaviour
     // Interface elements
     public GameObject pauseMenu;
     public static bool isPaused; //Responsible for pausing/unpausing the game.
-    public bool enableDebugging;
     public GameObject upgradeMenu;
     public static bool isUpgrading;
+    
+    
+    [SerializeField] private bool enableDebugging;
 
 
     // Gets all scripts needed
