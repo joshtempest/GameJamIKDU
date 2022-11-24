@@ -171,6 +171,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &178257039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 880896796363938069, guid: f4a22f25dad95014d876ed366d259dd5, type: 3}
+  m_PrefabInstance: {fileID: 880896796855030892}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &466573048
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pUpgrade: 10
+  tUpgrade: 0
 --- !u!4 &466573050
 Transform:
   m_ObjectHideFlags: 0
@@ -231,7 +237,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 880896796363938070, guid: f4a22f25dad95014d876ed366d259dd5, type: 3}
   m_PrefabInstance: {fileID: 880896796855030892}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 178257039}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58c24dad19bedbf4786ef25d5a12ee24, type: 3}
@@ -305,6 +311,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &677469310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8832344948567807949, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+  m_PrefabInstance: {fileID: 1142030869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &677469311 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8832344948567807948, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
@@ -939,6 +950,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 584371808}
     - target: {fileID: 880896796363938070, guid: f4a22f25dad95014d876ed366d259dd5, type: 3}
+      propertyPath: upgradeMenu
+      value: 
+      objectReference: {fileID: 677469310}
+    - target: {fileID: 880896796363938070, guid: f4a22f25dad95014d876ed366d259dd5, type: 3}
       propertyPath: DayProgressBar
       value: 
       objectReference: {fileID: 1825481129628924}
@@ -1003,6 +1018,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeController
       objectReference: {fileID: 0}
+    - target: {fileID: 8038869498492344469, guid: 5fa9e117586c62a48a88d436e1ea7659, type: 3}
+      propertyPath: SceneController
+      value: 
+      objectReference: {fileID: 178257039}
     - target: {fileID: 8038869498492344470, guid: 5fa9e117586c62a48a88d436e1ea7659, type: 3}
       propertyPath: m_RootOrder
       value: 2
