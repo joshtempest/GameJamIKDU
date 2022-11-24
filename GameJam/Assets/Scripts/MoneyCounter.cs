@@ -27,14 +27,11 @@ public class MoneyCounter : MonoBehaviour
     void FixedUpdate()
     {
         timeManager = TimeController.GetComponent<TimeManager>();
-<<<<<<< Updated upstream
         
-        //lastPrice = CostController.GetComponent<CostManager>().finalPrice;
-        //nightTime = timeManager.isNight;
-=======
         lastPrice = CostController.GetComponent<CostManager>().finalPrice;
         nightTime = timeManager.isNight;
->>>>>>> Stashed changes
+        lastPrice = CostController.GetComponent<CostManager>().finalPrice;
+        nightTime = timeManager.isNight;
     
         if(nightTime == true)
         {
