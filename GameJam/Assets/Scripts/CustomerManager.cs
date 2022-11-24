@@ -45,6 +45,7 @@ public class CustomerManager : MonoBehaviour
                 print("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                SetTimeText(timeRemaining);
                 }
             }
         }
