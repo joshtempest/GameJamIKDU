@@ -10,6 +10,10 @@ public class TimeManager : MonoBehaviour
     [HideInInspector] public bool isNight;
     public bool isCounting;
 
+    // Gets all scripts needed.
+    public GameObject SceneController;
+    private SceneManager sceneManager;
+
     // When true enables console debugging.
     [SerializeField] private bool enableDebugging;
 
@@ -17,6 +21,8 @@ public class TimeManager : MonoBehaviour
     void Start()
     {
         isNight = false;
+
+        sceneManager = SceneController.GetComponent<SceneManager>();
     }
 
     // Update is called once per frame
@@ -43,6 +49,9 @@ public class TimeManager : MonoBehaviour
                 
                 Debugger("Days");
                 Debugger("isNight");
+
+                sceneManager.UpgradeMenu();
+
 
                 isNight = true;
                 isCounting = false;

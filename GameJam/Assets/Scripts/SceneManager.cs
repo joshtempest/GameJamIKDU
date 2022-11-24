@@ -12,6 +12,7 @@ public class SceneManager : MonoBehaviour
     public static bool isUpgrading;
     
     
+    // When true enables console debugging.
     [SerializeField] private bool enableDebugging;
 
 
@@ -70,15 +71,17 @@ public class SceneManager : MonoBehaviour
 
     public void UpgradeMenu()
     {
+        timeManager = TimeController.GetComponent<TimeManager>();
+
         if (isUpgrading)
-        {
-            isUpgrading = true;
-            upgradeMenu.SetActive(true);
-        }
-        else if (!isUpgrading)
         {
             isUpgrading = false;
             upgradeMenu.SetActive(false);
+        }
+        else if (!isUpgrading)
+        {
+            isUpgrading = true;
+            upgradeMenu.SetActive(true);
         }
     }
 
