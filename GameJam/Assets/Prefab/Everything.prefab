@@ -3438,7 +3438,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7761871410049200440, guid: e22285fc1c8180243866d9eabbcf7a7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e22285fc1c8180243866d9eabbcf7a7f, type: 3}
 --- !u!4 &5094462046256525452 stripped
 Transform:
@@ -3504,7 +3505,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Salt
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5834712438108670437, guid: ccdff27b9eaff684c8d83ade088c2c60, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ccdff27b9eaff684c8d83ade088c2c60, type: 3}
 --- !u!4 &7529974970039075405 stripped
 Transform:
@@ -3574,7 +3576,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrot
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4277464968880250845, guid: 1ccb82c9b9704724d968bb8e14cec2d9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1ccb82c9b9704724d968bb8e14cec2d9, type: 3}
 --- !u!4 &4858311412997013246 stripped
 Transform:
