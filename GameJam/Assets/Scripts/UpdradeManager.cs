@@ -9,6 +9,7 @@ using System;
 public class UpdradeManager : MonoBehaviour
 {
 
+//This is the variable is referenced by the 
     public int pUpgrade;
 
 //This function is inwoked by pressing the button
@@ -23,7 +24,9 @@ public class UpdradeManager : MonoBehaviour
     public void Tips()
 
     {
+
         
+
     }
 
 
