@@ -8,9 +8,8 @@ using System;
 
 public class StartButton : MonoBehaviour
 {
-    
-   void Button()
+   public void Button()
    {
-    SceneManager.LoadScene("LoveSoup", LoadSceneMode.Single);
+        SceneManager.LoadScene("LoveSoup");
    }
 }

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: c1a19240b6beae54e9a4decf854f74da
+  - enabled: 1
+    path: Assets/LoveSoup.unity
+    guid: f4c490d3539396542840963406214a29
   m_configObjects: {}
