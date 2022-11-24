@@ -282,6 +282,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1814082946}
     m_Modifications:
+    - target: {fileID: 4148908014804943963, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: MoneyText
+      value: 
+      objectReference: {fileID: 1713091764}
     - target: {fileID: 5960151227488188866, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -473,6 +477,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5960151228935066130, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
   m_PrefabInstance: {fileID: 1713091762}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1713091764 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4364788823656707887, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+  m_PrefabInstance: {fileID: 1713091762}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1814082942
 GameObject:
   m_ObjectHideFlags: 0
