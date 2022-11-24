@@ -6,6 +6,13 @@ public class SceneManager : MonoBehaviour
 {
     public GameObject pauseMenu;
     public static bool isPaused; //Responsible for pausing/unpausing the game.
+    public bool enableDebugging;
+
+
+    // Gets all scripts needed
+    public GameObject TimeController;
+    private TimeManager timeManager;
+    public GameObject DayProgressBar;
 
     // Start is called before the first frame update
     void Start()
@@ -16,11 +23,25 @@ public class SceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpdateDayProgressBar();
+
         if (Input.GetKeyDown("escape"))
         {
-            print("Escape key was pressed");
+            //print("Escape key was pressed");
             PauseMenu();
         }
+    }
+    
+    public void UpdateDayProgressBar()
+    {
+        timeManager = TimeController.GetComponent<TimeManager>();
+
+        float length = timeManager.dayLength;    //TimeController.GetComponent<TimeManager>().dayLength; // Takes daylength variable from TimeManager script and attaches it to a local variable.
+        float time = timeManager.timer;     //TimeController.GetComponent<TimeManager>().timer; // Takes timer variable from TimeManager script and attaches it to a local variable.
+
+        DayProgressBar.GetComponent<ProgressBar>().maxBarValue = length; // Sets the max value of the day progress bar to match the dayLength variable.
+
+        DayProgressBar.GetComponent<ProgressBar>().BarValue = length - time; // Subtracts the length and time variables and attaches it to the BarValue from the ProgressBar script.
     }
 
     public void PauseMenu()
@@ -44,7 +65,7 @@ public class SceneManager : MonoBehaviour
     {
         Time.timeScale = 0f; //Stops the game
         isPaused = true;
-        Debug.Log("Paused"); //Prints to console that the game is paused
+        Debugger("PauseGame"); //Calls the Debug method to prints to console
     }
     
     //Unpauses the game when called
@@ -52,6 +73,21 @@ public class SceneManager : MonoBehaviour
     {
         Time.timeScale = 1f; //Resumes the game
         isPaused = false;
-        Debug.Log("Resumed"); //Prints to console that the game has resumed
+        Debugger("ResumeGame"); //Calls the Debug method to prints to console
+    }
+
+    void Debugger(string type)
+    {
+        if (enableDebugging == true)
+        {
+            if (type == "ResumeGame")
+            {
+                Debug.Log("Resumed Game.");
+            }
+            if (type == "PauseGame")
+            {
+                Debug.Log("Paused Game.");
+            }
+        }
     }
 }

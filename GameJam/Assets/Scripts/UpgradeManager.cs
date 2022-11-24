@@ -6,10 +6,9 @@ using TMPro;
 using UnityEngine.UI;
 using System;
 
-public class UpdradeManager : MonoBehaviour
+public class UpgradeManager : MonoBehaviour
 {
 
-//This is the variable is referenced by the 
     public int pUpgrade;
 
 //This function is inwoked by pressing the button
@@ -24,9 +23,7 @@ public class UpdradeManager : MonoBehaviour
     public void Tips()
 
     {
-
         
-
     }
 
 
