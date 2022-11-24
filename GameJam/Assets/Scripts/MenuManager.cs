@@ -79,12 +79,14 @@ public class MenuManager : MonoBehaviour
         {
             isUpgrading = false;
             upgradeMenu.SetActive(false);
+            timeManager.isCounting = true;
             ResumeGame();
         }
         else if (!isUpgrading)
         {
             isUpgrading = true;
             upgradeMenu.SetActive(true);
+            timeManager.isCounting = false;
             PauseGame();
         }
     }
