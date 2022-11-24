@@ -72,7 +72,7 @@ public class CustomerManager : MonoBehaviour
 
     public void SetTimeText(float time)
     {
-        timeText.text = "Time Remaining: " + time.ToString("f1");
+        timeText.text = "Customer Patience: " + time.ToString("f0");
     }
 
     public void GenerateCustomer()

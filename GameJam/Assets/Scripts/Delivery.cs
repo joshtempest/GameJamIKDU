@@ -22,7 +22,7 @@ public class Delivery : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetKeyDown(KeyCode.Q) && fm.hasSoup)
+        if (Input.GetKeyDown(KeyCode.Space) && fm.hasSoup)
         {
             Debug.Log("Delivery");
             cm.timerIsRunning = false;
