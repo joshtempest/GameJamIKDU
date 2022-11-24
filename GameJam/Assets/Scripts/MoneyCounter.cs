@@ -27,9 +27,6 @@ public class MoneyCounter : MonoBehaviour
     void FixedUpdate()
     {
         timeManager = TimeController.GetComponent<TimeManager>();
-        
-        lastPrice = CostController.GetComponent<CostManager>().finalPrice;
-        nightTime = timeManager.isNight;
         lastPrice = CostController.GetComponent<CostManager>().finalPrice;
         nightTime = timeManager.isNight;
     
