@@ -13,7 +13,6 @@ public class UpgradeManager : MonoBehaviour
     public int tUpgrade;
 
     public GameObject MoneyController;
-    public GameObject LightController;
     
     private MoneyCounter moneycounter;
 

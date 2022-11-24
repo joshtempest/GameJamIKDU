@@ -8,7 +8,6 @@ using UnityEngine;
 public class OrderManager : MonoBehaviour
 {
     List<Order> orders = new List<Order>();
-    public TextMeshProUGUI earningsText;
     int earnings = 0;
     public GameObject moneyCounter;
     MoneyCounter mc;
@@ -31,12 +30,6 @@ public class OrderManager : MonoBehaviour
     {
         earnings = orders.ElementAt(orderNumber).GetPrice() + um.tUpgrade;
         dailyEarnings += earnings;
-        SetEarningsText();
         orders.Remove(orders.ElementAt(orderNumber));
-    }
-
-    public void SetEarningsText()
-    {
-        earningsText.text = "Earnings: " + earnings;
     }
 }
