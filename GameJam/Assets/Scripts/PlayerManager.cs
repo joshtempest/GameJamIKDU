@@ -8,6 +8,7 @@ public class PlayerManager : MonoBehaviour
 
     private Vector2 movement; // Vi vil gemme det "Vector2" der kommer ind når man trykker WSAD ind på movement
     private Rigidbody2D myBody; // Den rigidbody vi vil flytte rundt
+    private FoodManager foodManager;
 
     
 
@@ -38,6 +39,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
+            foodManager.Actions();
             print("space key was pressed");
         }
     }

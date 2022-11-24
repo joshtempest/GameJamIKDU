@@ -32,10 +32,22 @@ public class FoodManager : MonoBehaviour
             }
 
         }
-   
+
+    }
+    public void Actions()
+    {
+        if (nearOnion) hasOnion = true;
+        else if (nearTomato) hasTomato = true;
+        else if (nearCarrot) hasCarrot = true;
+        else if (nearPot && hasTomato && hasOnion && hasCarrot)
+        {
+            hasSoup = true;
+            Debug.Log("You made soup. Olga is proud");
+        }
     }
 
-    private void makeSoup()
+
+private void makeSoup()
     {
         if (hasTomato && hasCarrot && hasOnion && withinRange && Input.GetKeyDown(KeyCode.E))
         {

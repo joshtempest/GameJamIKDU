@@ -217,6 +217,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1172268780}
   - component: {fileID: 1172268781}
+  - component: {fileID: 1172268783}
+  - component: {fileID: 1172268782}
   m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -251,9 +253,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3804e1f87f54b67478a036f4e2c6b782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elecPrice: 1
-  onion: 1
-  tomato: 1
-  saltPrice: 0.5
-  carrot: 1
+  finalPrice: 0
+  allIngrePrice: 0
+  TimeManager: {fileID: 0}
+  timeManager: {fileID: 1172268782}
   day: 3
+  Time: 3
+  tomatoUsed: 2
+  carrotUsed: 1
+  onionUsed: 1
+  saltUsed: 0
+--- !u!114 &1172268782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172268779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ef4135a4bcec94eb150ac1f38ae8d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayLength: 0
+  isCounting: 0
+--- !u!114 &1172268783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172268779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69e0b91d62238e746a4f6c4af6a3f09a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasTomato: 0
+  hasCarrot: 0
+  hasOnion: 0
+  nearTomato: 0
+  nearCarrot: 0
+  nearOnion: 0
+  nearPot: 0
+  hasSoup: 0
