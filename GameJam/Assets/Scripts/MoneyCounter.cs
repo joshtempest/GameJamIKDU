@@ -27,7 +27,7 @@ public class MoneyCounter : MonoBehaviour
         om = orderManager.GetComponent<OrderManager>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         timeManager = TimeController.GetComponent<TimeManager>();
         lastPrice = CostController.GetComponent<CostManager>().finalPrice;

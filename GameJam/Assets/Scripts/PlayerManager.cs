@@ -8,8 +8,8 @@ public class PlayerManager : MonoBehaviour
 
     private Vector2 movement; // Vi vil gemme det "Vector2" der kommer ind n�r man trykker WSAD ind p� movement
     private Rigidbody2D myBody; // Den rigidbody vi vil flytte rundt
-    private FoodManager foodManager;
-    private PickUp pickUp;
+    public FoodManager foodManager;
+    public PickUp pickUp;
     public Animator myAnimator;
 
    
