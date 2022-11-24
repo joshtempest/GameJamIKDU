@@ -9,14 +9,15 @@ public class Delivery : MonoBehaviour
     OrderManager om;
     public GameObject player;
     FoodManager fm;
-    public GameObject customer;
+    public GameObject customerController;
     CustomerManager cm;
-
+    
     private void Start()
     {
         om = orderManager.GetComponent<OrderManager>();
         fm = player.GetComponent<FoodManager>();
-        cm = customer.GetComponent<CustomerManager>();
+        cm = customerController.GetComponent<CustomerManager>();
+        
     }
 
     public void OnTriggerStay2D(Collider2D other)
@@ -26,7 +27,7 @@ public class Delivery : MonoBehaviour
             Debug.Log("Delivery");
             cm.timerIsRunning = false;
             fm.hasSoup = false;
-            om.RemoveOrder(0);
+            om.RemoveOrder(0, cm.timeRemaining);
         }
     }
 }
