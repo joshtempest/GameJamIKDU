@@ -6,26 +6,39 @@ using UnityEngine.InputSystem;
 public class PlayerManager : MonoBehaviour
 {
 
-    private Vector2 movement; // Vi vil gemme det "Vector2" der kommer ind når man trykker WSAD ind på movement
+    private Vector2 movement; // Vi vil gemme det "Vector2" der kommer ind nï¿½r man trykker WSAD ind pï¿½ movement
     private Rigidbody2D myBody; // Den rigidbody vi vil flytte rundt
     private FoodManager foodManager;
+    public Animator myAnimator;
 
     
 
     [SerializeField] private int speed = 5; //Den hastighed vores human skal flyttes rundt
 
-    private void Awake() // Awake køre kun engang når programmet starter
+    private void Awake() // Awake kï¿½re kun engang nï¿½r programmet starter
     {
-        myBody = GetComponent<Rigidbody2D>(); // Vi sætter myBody rigidbody til rigidbody på det gameobject vi sidder på
+        myBody = GetComponent<Rigidbody2D>(); // Vi sï¿½tter myBody rigidbody til rigidbody pï¿½ det gameobject vi sidder pï¿½
     }
-    private void OnMovement(InputValue value) // Vi laver en function der holder øje med vores Input systems value
+    private void OnMovement(InputValue value) // Vi laver en function der holder ï¿½je med vores Input systems value
     {
-        movement = value.Get<Vector2>(); // Movement bliver sat til vector 2 fra vores Input Action når brugeren trykker WSAD
+        movement = value.Get<Vector2>(); // Movement bliver sat til vector 2 fra vores Input Action nï¿½r brugeren trykker WSAD
+
+        if (movement.x != 0 || movement.y !=0)
+        {
+            myAnimator.SetFloat("x", movement.x);
+            myAnimator.SetFloat("y", movement.y);
+
+            myAnimator.SetBool("isWalking", true);
+        }
+        else
+        {
+            myAnimator.SetBool("isWalking", false);
+        }
     }
 
-    private void FixedUpdate() // FixedUpdate er mere effektiv end update når det kommer til even based ting som flytning
+    private void FixedUpdate() // FixedUpdate er mere effektiv end update nï¿½r det kommer til even based ting som flytning
     {
-        myBody.velocity = movement * speed; // Vi sætter vores velocity af vores rigidbody2D i den hastighed vi har sat
+        myBody.velocity = movement * speed; // Vi sï¿½tter vores velocity af vores rigidbody2D i den hastighed vi har sat
     }
 
     // Start is called before the first frame update
