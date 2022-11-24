@@ -244,7 +244,7 @@ PrefabInstance:
     - target: {fileID: 963325004, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
       propertyPath: tomatoSoup
       value: 
-      objectReference: {fileID: 1429445186}
+      objectReference: {fileID: 154016098}
     - target: {fileID: 963325004, guid: 2825f30d37851439e8fe43009d0b1bc6, type: 3}
       propertyPath: carrotSpawn
       value: 
@@ -307,6 +307,11 @@ PrefabInstance:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5960151227612178297, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
   m_PrefabInstance: {fileID: 231958001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &154016098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4368839738296927865, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
+  m_PrefabInstance: {fileID: 1429445185}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &192299963
 PrefabInstance:
@@ -1011,11 +1016,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
---- !u!1 &1429445186 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4368839737679329102, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
-  m_PrefabInstance: {fileID: 1429445185}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1429445187 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7529974970039075407, guid: 08c9f37786c057243bb1aaf8369e25da, type: 3}
