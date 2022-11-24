@@ -33,7 +33,7 @@ public class CustomerManager : MonoBehaviour
         upgrade = upgradeManager.pUpgrade;
         timeRemaining += upgrade;
         om = orderController.GetComponent<OrderManager>();
-        InvokeRepeating("GenerateCustomer", 2.0f, 20.0f);
+        InvokeRepeating("GenerateCustomer", 2.0f, 10.0f);
     }
 
 
