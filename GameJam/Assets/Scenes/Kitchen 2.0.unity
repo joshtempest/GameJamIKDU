@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 94002917}
   - component: {fileID: 94002916}
   m_Layer: 0
-  m_Name: carrot.20
+  m_Name: carrot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 1488257015}
   - component: {fileID: 1488257014}
   m_Layer: 0
-  m_Name: Tomatoes
+  m_Name: Tomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

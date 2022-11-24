@@ -11,7 +11,7 @@ public class PlayerManager : MonoBehaviour
     private FoodManager foodManager;
     public Animator myAnimator;
 
-    
+   
 
     [SerializeField] private int speed = 5; //Den hastighed vores human skal flyttes rundt
 
@@ -56,4 +56,5 @@ public class PlayerManager : MonoBehaviour
             print("space key was pressed");
         }
     }
+
 }
