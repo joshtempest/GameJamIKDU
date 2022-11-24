@@ -38,13 +38,6 @@ public class UpgradeManager : MonoBehaviour
         moneycounter.currentMoney -= 25;
     }
 
-     public void AntiDepressants()
-
-    {
-        
-    }
-
-
 }
 
 
