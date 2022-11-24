@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8038869498492344470}
   - component: {fileID: 8038869498492344469}
   m_Layer: 0
-  m_Name: TimeControler
+  m_Name: TimeController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
