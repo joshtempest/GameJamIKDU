@@ -55,6 +55,10 @@ public class CustomerManager : MonoBehaviour
                 }
             }
         }
+        else if (!timerIsRunning)
+        {
+            SetTimeText(timeRemaining);
+        }
     }
 
     public void SetTimeText(float time)
