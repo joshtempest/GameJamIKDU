@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class SceneManager : MonoBehaviour
 {
+    
+    // Interface elements
     public GameObject pauseMenu;
     public static bool isPaused; //Responsible for pausing/unpausing the game.
-    public bool enableDebugging;
+    public GameObject upgradeMenu;
+    public static bool isUpgrading;
+    
+    
+    [SerializeField] private bool enableDebugging;
 
 
     // Gets all scripts needed
@@ -31,13 +37,14 @@ public class SceneManager : MonoBehaviour
             PauseMenu();
         }
     }
-    
+
+
     public void UpdateDayProgressBar()
     {
         timeManager = TimeController.GetComponent<TimeManager>();
 
-        float length = timeManager.dayLength;    //TimeController.GetComponent<TimeManager>().dayLength; // Takes daylength variable from TimeManager script and attaches it to a local variable.
-        float time = timeManager.timer;     //TimeController.GetComponent<TimeManager>().timer; // Takes timer variable from TimeManager script and attaches it to a local variable.
+        float length = timeManager.dayLength;    // Takes daylength variable from TimeManager script and attaches it to a local variable.
+        float time = timeManager.timer;     // Takes timer variable from TimeManager script and attaches it to a local variable.
 
         DayProgressBar.GetComponent<ProgressBar>().maxBarValue = length; // Sets the max value of the day progress bar to match the dayLength variable.
 
@@ -59,6 +66,22 @@ public class SceneManager : MonoBehaviour
             PauseGame();
         }
     }
+
+
+    public void UpgradeMenu()
+    {
+        if (isUpgrading)
+        {
+            isUpgrading = true;
+            upgradeMenu.SetActive(true);
+        }
+        else if (!isUpgrading)
+        {
+            isUpgrading = false;
+            upgradeMenu.SetActive(false);
+        }
+    }
+
 
     //Pauses the game when called
     public void PauseGame()

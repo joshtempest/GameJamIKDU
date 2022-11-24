@@ -26,6 +26,9 @@ public class CustomerManager : MonoBehaviour
         upgradeManager = UpgradeController.GetComponent<UpgradeManager>();
         //upgrade = upgradeManager.pUpgrade;
         //timeRemaining += upgrade;
+        upgradeManager = UpgradeController.GetComponent<UpgradeManager>();
+        upgrade = upgradeManager.pUpgrade;
+        timeRemaining += upgrade;
     }    
  
 
