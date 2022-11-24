@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class FoodManager : MonoBehaviour
 {
+    // To check if the player has the different ingredients
     public bool hasTomato;
     public bool hasCarrot;
     public bool hasOnion;
 
+    // To check if the player is near the different stations.
     public bool nearTomato, nearCarrot, nearOnion, nearPot = false;
 
-
+    // To Check if the player has Soup
     public bool hasSoup;
 
+    // To check if the player is within range of the stations
     private bool withinRange;
 
     private void Update()
     {
+        // Makes sures that the player is near a station, and if the key is pressed "gives" the player an ingredient or makes soup
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (nearOnion) hasOnion = true;
@@ -34,6 +38,7 @@ public class FoodManager : MonoBehaviour
         }
    
     }
+    // Is being called in the playerManagement script
     public void Actions()
     {
         if (nearOnion) hasOnion = true;
@@ -46,24 +51,9 @@ public class FoodManager : MonoBehaviour
         }
     }
 
-
-private void makeSoup()
-    {
-        if (hasTomato && hasCarrot && hasOnion && withinRange && Input.GetKeyDown(KeyCode.E))
-        {
-            hasSoup = true;
-            Debug.Log("You made soup. Olga is proud");
-        }
-
-        else
-        {
-            Debug.Log("You have very small PP");
-        }
-    }
-
+    // Determines fi the player is near tagged objects
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        withinRange = true;
         if (collision.gameObject.tag == "Tomatoes")
         {
             nearTomato = true;
@@ -86,6 +76,8 @@ private void makeSoup()
         }
     }
 
+    // Determines when the player is no longer near a tagged object
+    // If soup has been made - sets the bool to false again
     private void OnTriggerExit2D(Collider2D other)
     {
 
