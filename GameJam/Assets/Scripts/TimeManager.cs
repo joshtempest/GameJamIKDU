@@ -31,7 +31,7 @@ public class TimeManager : MonoBehaviour
         {
             // Disables the night.
             isNight = false;
-            Debugger("isNotNight")
+            Debugger("isNotNight");
 
             timer += Time.deltaTime;
             //Debug.Log("Timer = " + timer);
