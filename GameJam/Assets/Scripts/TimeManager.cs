@@ -52,7 +52,6 @@ public class TimeManager : MonoBehaviour
 
                 sceneManager.UpgradeMenu();
 
-
                 isNight = true;
                 isCounting = false;
             }
