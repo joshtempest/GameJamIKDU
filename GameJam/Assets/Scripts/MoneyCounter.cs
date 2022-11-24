@@ -25,6 +25,7 @@ public class MoneyCounter : MonoBehaviour
     {
         SetCurrentMoneyText();
         om = orderManager.GetComponent<OrderManager>();
+        NoMoney();
     }
 
     void Update()
@@ -48,6 +49,14 @@ public class MoneyCounter : MonoBehaviour
     public void SetCurrentMoneyText()
     {
         MoneyText.text = "Money: " + currentMoney;
+    }
+
+    public void NoMoney()
+    {
+        if(currentMoney <= 0 )
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
 }
