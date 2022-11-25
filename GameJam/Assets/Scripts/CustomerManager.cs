@@ -61,7 +61,7 @@ public class CustomerManager : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
                 SetTimeText(timeRemaining);
-                    om.RemoveOrder(0, timeRemaining);
+                om.RemoveOrder(0, timeRemaining);
                 }
             }
         }

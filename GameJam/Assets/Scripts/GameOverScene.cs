@@ -15,6 +15,7 @@ public class GameOverScene : MonoBehaviour
     {
         totalDaysText.text = "Total days: " + totalDays;
         totalEarningsText.text = "Total earnings: " + totalEarnings;
+        Time.timeScale = 1;
     }
 
     public void PlayAgain()
