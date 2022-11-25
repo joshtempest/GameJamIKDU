@@ -15,15 +15,21 @@ public class OrderManager : MonoBehaviour
     public GameObject upgradeController;
     UpgradeManager um;
     public float dailyEarnings = 0;
+    public GameObject soupOrder;
+    public GameObject soup;
 
     private void Start()
     {
         mc = moneyCounter.GetComponent<MoneyCounter>();
         um = upgradeController.GetComponent<UpgradeManager>();
+        soupOrder.SetActive(false);
+        soup.SetActive(false);
     }
 
     public void AddOrder(Order order)
     {
+        soupOrder.SetActive(true);
+        soup.SetActive(false);
         orders.Add(order);
     }
 
@@ -39,5 +45,7 @@ public class OrderManager : MonoBehaviour
         }        
         dailyEarnings += earnings;
         orders.Remove(orders.ElementAt(orderNumber));
+        soupOrder.SetActive(false);
+        soup.SetActive(true);
     }
 }

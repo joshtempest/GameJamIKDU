@@ -50,6 +50,7 @@ public class TimeManager : MonoBehaviour
             if (timer >= dayLength)
             {
                 days += 1; // Adds a day to the days variable.
+                GameOverScene.totalDays = days;
                 timer = 0; // Resets the timer for he next day.
                 
                 Debugger("Days");
