@@ -66,7 +66,7 @@ public class FoodManager : MonoBehaviour
             hasSoup = true;
             pickUp.destruction();
             Debug.Log("You made soup. Olga is proud");
-            pickUp.SpawnTomatoSoup();
+            //pickUp.SpawnTomatoSoup();
         }
 
     }
