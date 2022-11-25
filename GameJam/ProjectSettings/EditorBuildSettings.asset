@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LoveSoup.unity
     guid: f4c490d3539396542840963406214a29
+  - enabled: 1
+    path: Assets/GameOver.unity
+    guid: a53e2b1d0b0534aff8e622199fea0a21
   m_configObjects: {}

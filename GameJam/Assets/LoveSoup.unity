@@ -828,8 +828,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Customer Patience: 10'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 61aa0b9f81ed25e4f8e02830f5161588, type: 2}
-  m_sharedMaterial: {fileID: -1055895120455146785, guid: 61aa0b9f81ed25e4f8e02830f5161588, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1765,8 +1765,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Day 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 61aa0b9f81ed25e4f8e02830f5161588, type: 2}
-  m_sharedMaterial: {fileID: -1055895120455146785, guid: 61aa0b9f81ed25e4f8e02830f5161588, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
