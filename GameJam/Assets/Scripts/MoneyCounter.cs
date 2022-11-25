@@ -9,6 +9,7 @@ public class MoneyCounter : MonoBehaviour
 {
 
     public GameObject CostController;
+    public CostManager costManager;
     public GameObject TimeController;
     private TimeManager timeManager;
     public GameObject orderManager;
@@ -26,24 +27,21 @@ public class MoneyCounter : MonoBehaviour
         SetCurrentMoneyText();
         om = orderManager.GetComponent<OrderManager>();
         NoMoney();
+        costManager = CostController.GetComponent<CostManager>();
     }
 
     void Update()
     {
-        timeManager = TimeController.GetComponent<TimeManager>();
-        lastPrice = CostController.GetComponent<CostManager>().finalPrice;
-        nightTime = timeManager.isNight;
-    
-        if(nightTime == true)
-        {
-            currentMoney += om.dailyEarnings;
-            om.dailyEarnings = 0;
-            currentMoney -= lastPrice;
-            lastPrice = 0;
-        }
-
         SetCurrentMoneyText();
-
+    }
+    public void NightTimeStuff()
+    { 
+        costManager.PriceCalculation();
+        lastPrice = CostController.GetComponent<CostManager>().finalPrice;
+        currentMoney += om.dailyEarnings;
+        om.dailyEarnings = 0;
+        currentMoney -= lastPrice;
+        lastPrice = 0;
     }
 
     public void SetCurrentMoneyText()

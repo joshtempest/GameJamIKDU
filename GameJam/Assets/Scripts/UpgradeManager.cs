@@ -26,6 +26,7 @@ public class UpgradeManager : MonoBehaviour
     public void CustomerPatience()
 
     {
+        if (moneycounter.currentMoney - 20 < 0) return;
         pUpgrade += 2;
         moneycounter.currentMoney -= 20;
 
@@ -34,6 +35,7 @@ public class UpgradeManager : MonoBehaviour
     public void Tips()
 
     {
+        if (moneycounter.currentMoney - 25 < 0) return;
         tUpgrade += 2;
         moneycounter.currentMoney -= 25;
     }

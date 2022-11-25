@@ -12,7 +12,9 @@ public class TimeManager : MonoBehaviour
 
     // Gets all scripts needed.
     public GameObject SceneController;
+    public GameObject MoneyController;
     private MenuManager menuManager;
+    private MoneyCounter moneyCounter;
 
     // When true enables console debugging.
     [SerializeField] private bool enableDebugging;
@@ -22,6 +24,7 @@ public class TimeManager : MonoBehaviour
     {
         isNight = false;
 
+        moneyCounter= MoneyController.GetComponent<MoneyCounter>();
         menuManager = SceneController.GetComponent<MenuManager>();
 
         days = 1;
@@ -53,6 +56,7 @@ public class TimeManager : MonoBehaviour
                 Debugger("isNight");
 
                 menuManager.UpgradeMenu();
+                moneyCounter.NightTimeStuff();
 
                 isNight = true;
             }

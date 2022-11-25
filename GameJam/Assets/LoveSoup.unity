@@ -1514,6 +1514,10 @@ PrefabInstance:
       value: TimeController
       objectReference: {fileID: 0}
     - target: {fileID: 8038869498492344469, guid: 5fa9e117586c62a48a88d436e1ea7659, type: 3}
+      propertyPath: MoneyController
+      value: 
+      objectReference: {fileID: 828203994}
+    - target: {fileID: 8038869498492344469, guid: 5fa9e117586c62a48a88d436e1ea7659, type: 3}
       propertyPath: SceneController
       value: 
       objectReference: {fileID: 486892405}
