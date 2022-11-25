@@ -21,8 +21,8 @@ public class PickUp : MonoBehaviour
     {
         Fat_Chef = GameObject.Find("Fat_Chef");
         chefTransform = Fat_Chef.GetComponent<Transform>();
-        cx = chefTransform.position.x;
-        cy= chefTransform.position.y - 10;
+        cx = chefTransform.position.x + 12.861f;
+        cy= chefTransform.position.y + 5.1f;
     }
 
     public void SpawnTomato()
@@ -39,7 +39,7 @@ public class PickUp : MonoBehaviour
     }
     public void SpawnTomatoSoup()
     {
-        Instantiate(tomatoSoup, new Vector3(cx, cy), Quaternion.identity);
+        Instantiate(tomatoSoup, chefTransform, true);
     }
     public void destruction()
     {
