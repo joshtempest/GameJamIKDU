@@ -46,7 +46,7 @@ public class MoneyCounter : MonoBehaviour
 
     public void SetCurrentMoneyText()
     {
-        MoneyText.text = "Money: " + currentMoney;
+        MoneyText.text = "Money: " + currentMoney.ToString("f1");
     }
 
     public void NoMoney()

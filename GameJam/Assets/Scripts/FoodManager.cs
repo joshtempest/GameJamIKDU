@@ -45,18 +45,18 @@ public class FoodManager : MonoBehaviour
     // Is being called in the playerManagement script
     public void Actions()
     {
-        if (nearOnion && !hasOnion)
+        if (nearOnion && !hasOnion && !hasSoup)
         {
             hasOnion = true;
             pickUp.SpawnSalt();
         }
             
-        else if (nearTomato && !hasTomato) 
+        else if (nearTomato && !hasTomato && !hasSoup) 
         {
             hasTomato = true;
             pickUp.SpawnTomato();
         }
-        else if (nearCarrot && !hasCarrot) 
+        else if (nearCarrot && !hasCarrot && !hasSoup) 
         {
             hasCarrot = true;
             pickUp.SpawnCarrot();
