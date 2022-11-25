@@ -320,6 +320,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1518431124}
     m_Modifications:
+    - target: {fileID: 381505644099921622, guid: 05204762576882a4995cd64ec7109bf2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 381505644189370549, guid: 05204762576882a4995cd64ec7109bf2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 381505644216934640, guid: 05204762576882a4995cd64ec7109bf2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 381505644216934642, guid: 05204762576882a4995cd64ec7109bf2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -412,6 +424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenuPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 381505645270968633, guid: 05204762576882a4995cd64ec7109bf2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05204762576882a4995cd64ec7109bf2, type: 3}
 --- !u!224 &192299964 stripped
@@ -430,10 +446,58 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 739953475}
+    - target: {fileID: 5960151227570600256, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151227570600256, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151227570600256, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 145.72105
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151227570600256, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151227612178296, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151227612178296, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151227612178296, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151227612178296, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5960151227612178299, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1931437364}
+    - target: {fileID: 5960151227955217563, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151227955217563, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151227955217563, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 145.72105
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151227955217563, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5960151228935066130, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -521,6 +585,26 @@ PrefabInstance:
     - target: {fileID: 5960151228935066131, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
       propertyPath: m_Name
       value: UpgradeMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151228935066131, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151229190442624, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151229190442624, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151229190442624, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960151229190442624, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5960151229190442627, guid: 8769a4e5552df0f4485a7a2286d5f883, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -828,8 +912,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Customer Patience: 10'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 61aa0b9f81ed25e4f8e02830f5161588, type: 2}
+  m_sharedMaterial: {fileID: -1055895120455146785, guid: 61aa0b9f81ed25e4f8e02830f5161588, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1765,8 +1849,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Day 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 61aa0b9f81ed25e4f8e02830f5161588, type: 2}
+  m_sharedMaterial: {fileID: -1055895120455146785, guid: 61aa0b9f81ed25e4f8e02830f5161588, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
