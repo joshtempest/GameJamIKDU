@@ -33,7 +33,7 @@ public class CustomerManager : MonoBehaviour
         upgrade = upgradeManager.pUpgrade;
         timeRemaining += upgrade;
         om = orderController.GetComponent<OrderManager>();
-        InvokeRepeating("GenerateCustomer", 2.0f, 5.0f);
+        InvokeRepeating("GenerateCustomer", 2.0f, 5.0f); //Runs "GenerateCustomer" in 2 seconds and then repeats every 5 seconds 
     }
 
 
@@ -76,11 +76,13 @@ public class CustomerManager : MonoBehaviour
         timeText.text = "Customer Patience: " + time.ToString("f0");
     }
 
+    //Generates a customer named "Bob" and sets the price and time to 10.
     public void GenerateCustomer()
     {
         NewCustomer(10,"Bob", 10);
     }
 
+    //Adds an order to the "OrderManager" game object and sets the patience timer
     public void NewCustomer(int price, string name, float time)
     {
         om.AddOrder(new Order(price, name));

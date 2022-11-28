@@ -40,7 +40,7 @@ public class MoneyCounter : MonoBehaviour
         costManager.PriceCalculation();
         lastPrice = CostController.GetComponent<CostManager>().finalPrice;
         currentMoney += om.dailyEarnings;
-        GameOverScene.totalEarnings += om.dailyEarnings;
+        GameOverScene.totalEarnings += om.dailyEarnings; //Adds the daily earnings to the total earnings (from "GameOverScene")
         om.dailyEarnings = 0;
         currentMoney -= lastPrice;
         lastPrice = 0;
