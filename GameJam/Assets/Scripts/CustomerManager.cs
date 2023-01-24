@@ -55,14 +55,14 @@ public class CustomerManager : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
 
-            if (timeRemaining <= 0)
-                {
-                print("Time has run out!");
-                timeRemaining = 0;
-                timerIsRunning = false;
-                SetTimeText(timeRemaining);
-                om.RemoveOrder(0, timeRemaining);
-                }
+                if (timeRemaining <= 0)
+                    {
+                    print("Time has run out!");
+                    timeRemaining = 0;
+                    timerIsRunning = false;
+                    SetTimeText(timeRemaining);
+                    om.RemoveOrder(0, timeRemaining);
+                    }
             }
         }
         else if (!timerIsRunning)

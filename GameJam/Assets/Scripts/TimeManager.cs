@@ -28,7 +28,7 @@ public class TimeManager : MonoBehaviour
         menuManager = SceneController.GetComponent<MenuManager>();
 
         days = 1;
-}
+    }
 
     // Update is called once per frame
     void FixedUpdate()
