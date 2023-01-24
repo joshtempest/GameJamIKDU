@@ -40,8 +40,7 @@ public class TimeManager : MonoBehaviour
     {
         if (isCounting == true) // If isCounting bool is true, the TimeManager function will run.
         {
-            // Disables the night.
-            isNight = false;
+            isNight = false; // Disables the night.
             Debugger("isNotNight");
 
             timer += Time.deltaTime;

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This script calculates the price of various items in the game such as electricity, ingredients, and final price for the day. The script uses variables from other scripts and hardcoded values to perform these calculations.
+/// </summary>
 public class CostManager : MonoBehaviour
 {
     //Declares all the variables needed
@@ -26,13 +29,9 @@ public class CostManager : MonoBehaviour
     public int onionUsed = 1;
     public int saltUsed = 0;
 
-
-   
-    void Start()
-    {
-
-    }
-
+    /// <summary>
+    /// This method calculates the final price for various items in the game, it uses the "days" variable from the "TimeManager" script attached to the "TimeController" object. It calculates the final electricity price, ingredient price, and the final price for the day. The method logs the final prices in the console.
+    /// </summary>
     public void PriceCalculation()
     {
         //Gets variable days from timeManager script

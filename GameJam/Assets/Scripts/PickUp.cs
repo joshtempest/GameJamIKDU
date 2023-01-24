@@ -35,31 +35,41 @@ public class PickUp : MonoBehaviour
         cy = chefTransform.position.y + 5.1f; // Assigns the y-coordinate of the chef's position plus 5.1f to the "cy" variable.
     }
 
-    // The SpawnTomato method is used to instantiate a new "tomatoSpawn" object as a child of the "chefTransform" object.
+    /// <summary>
+    /// The SpawnTomato method is used to instantiate a new "tomatoSpawn" object as a child of the "chefTransform" object.
+    /// </summary>
     public void SpawnTomato()
     {
         Instantiate(tomatoSpawn, chefTransform, true);
     }
 
-    // The SpawnCarrot method is used to instantiate a new "carrotSpawn" object as a child of the "chefTransform" object.
+    /// <summary>
+    /// The SpawnCarrot method is used to instantiate a new "carrotSpawn" object as a child of the "chefTransform" object.
+    /// </summary>
     public void SpawnCarrot()
     {
         Instantiate(carrotSpawn, chefTransform, true);
     }
 
-    // The SpawnSalt method is used to instantiate a new "saltSpawn" object as a child of the "chefTransform" object.
+    /// <summary>
+    /// The SpawnSalt method is used to instantiate a new "saltSpawn" object as a child of the "chefTransform" object.
+    /// </summary>
     public void SpawnSalt()
     {
         Instantiate(saltSpawn, chefTransform, true);
     }
 
-    // The SpawnTomatoSoup method is used to instantiate a new "tomatoSoup" object as a child of the "chefTransform" object.
+    /// <summary>
+    /// The SpawnTomatoSoup method is used to instantiate a new "tomatoSoup" object as a child of the "chefTransform" object.
+    /// </summary>
     public void SpawnTomatoSoup()
     {
         Instantiate(tomatoSoup, chefTransform, true);
     }
     
-    // The destruction method is used to find and destroy the "Salt(Clone)", "Tomato(Clone)" and "Carrot(Clone)" objects.
+    /// <summary>
+    /// The destruction method is used to find and destroy the "Salt(Clone)", "Tomato(Clone)" and "Carrot(Clone)" objects.
+    /// </summary>
     public void destruction()
     {
         salty = GameObject.Find("Salt(Clone)"); // Finds the "Salt(Clone)" GameObject.

@@ -58,5 +58,4 @@ public class MoneyCounter : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
-
 }

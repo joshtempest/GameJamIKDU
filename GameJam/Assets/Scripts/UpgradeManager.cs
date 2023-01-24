@@ -11,8 +11,8 @@ using System;
 /// </summary>
 public class UpgradeManager : MonoBehaviour
 {
-    public int pUpgrade; //Declares a public integer variable called pUpgrade.
-    public int tUpgrade; //This line declares a public integer variable called tUpgrade.
+    public int pUpgrade; //Intiger variable that holds the upgrade level of the patience.
+    public int tUpgrade; //Intiger variable that holds the upgrade level of the tips.
 
     public GameObject MoneyController; //Declares a public GameObject variable called MoneyController.
 
@@ -24,7 +24,9 @@ public class UpgradeManager : MonoBehaviour
         moneycounter = MoneyController.GetComponent<MoneyCounter>(); //Sets the moneycounter variable to the MoneyCounter component on the MoneyController GameObject
     }
 
-    //This method is called CustomerPatience, it allows the player to upgrade the customer patience. It is inwoked by pressing the button.
+    /// <summary>
+    /// This method allows the player to upgrade the customer patience. It is inwoked by pressing a button.
+    /// </summary>
     public void CustomerPatience()
 
     {
@@ -33,7 +35,9 @@ public class UpgradeManager : MonoBehaviour
         moneycounter.currentMoney -= 20; //Decrements the current money by 20.
     }
 
-    //This method allows the player to upgrade the tips.
+    /// <summary>
+    /// This method allows the player to upgrade the tips. It is inwoked by pressing a button.
+    /// </summary>
     public void Tips()
     {
         if (moneycounter.currentMoney - 25 < 0) return; //Checks if the current money is less than 25, if so return nothing.
