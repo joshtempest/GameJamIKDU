@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerManager : MonoBehaviour
 {
 
-    private Vector2 movement; // Vi vil gemme det "Vector2" der kommer ind n�r man trykker WSAD ind p� movement
+    private Vector2 movement; // Vi vil gemme det "Vector2" der kommer ind når man trykker WSAD ind på movement
     private Rigidbody2D myBody; // Den rigidbody vi vil flytte rundt
     public FoodManager foodManager;
     public PickUp pickUp;
